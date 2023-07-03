@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Calcolo codice fiscale</h1>
+    <table>
+      <caption>
+        Inserire campi
+      </caption>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Data di nascita</th>
+            <th>Sesso</th>
+            <th>Città</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" name="nome" id="nome" value="sergio"/></td>
+            <td><input type="text" name="cognome" id="cognome" value="di pinto"/></td>
+            <td><input type="date" name="data" id="data" value="1998-11-26"/></td>
+            <td>
+              <input
+                type="radio"
+                name="sesso"
+                id="maschio"
+                value="maschio"
+                checked
+              /><label for="maschio">Maschio</label
+              ><input
+                type="radio"
+                name="sesso"
+                id="femmina"
+                value="femmina"
+              /><label for="femmina">femmina</label>
+            </td>
+            <td><input type="text" name="citta" id="citta" value="bisceglie"/></td>
+          </tr>
+        </tbody>
+        <button type="button" onclick="calcola()">Calcola</button>
+    </table>
+    <h1 id="cf"></h1>
+    <script src="script.js"></script> 
+  </body>
+</html>
